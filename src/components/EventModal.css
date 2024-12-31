@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.modal input, .modal textarea {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}

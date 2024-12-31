@@ -1,0 +1,49 @@
+.filter-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.filter-input {
+  width: calc(100% - 20px);
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.event-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.event-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.event-item p {
+  margin: 5px 0;
+}
+
+.event-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.event-item button:hover {
+  background-color: #c82333;
+}
