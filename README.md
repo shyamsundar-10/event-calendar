@@ -13,20 +13,19 @@ This project is a Dynamic Event Calendar Application built with React.js. It all
 ## Features
 
 - **Calendar View**: Displays a monthly calendar grid with days aligned properly. Users can navigate between months and years.
-  
-  ![calendar](https://github.com/user-attachments/assets/679c76c2-5bf2-43e9-8af4-3be2f59bfd57)
+  ![calendar](https://github.com/user-attachments/assets/d6828e5a-791a-44a9-a808-f19c7b296514)
 
 - **Event Management**: Users can add, edit, and delete events on specific days.
   
-  ![addevent](https://github.com/user-attachments/assets/c9dce0ed-f4a6-40db-9e12-20a9fe496695)
+  ![addevent](https://github.com/user-attachments/assets/6843feba-810e-4096-a72b-dedc0141dffc)
 
 - **Event Filtering**: Users can filter events by keyword.
   
-  ![search](https://github.com/user-attachments/assets/2365a2da-bc4a-4635-9341-58271629f15a)
+  ![search](https://github.com/user-attachments/assets/bff8d6d4-3ff8-4a27-8404-2e76b1db5591)
 
 - **Data Persistence**: Events are stored in `localStorage` to persist data between page refreshes.
   
-- ![eventlist](https://github.com/user-attachments/assets/8231a7d5-5d31-4565-9d4e-354655037808)
+  ![eventlist](https://github.com/user-attachments/assets/b899879f-a7f5-48bc-a24b-fb442d04628a)
 
 - **Responsive Design**: The layout adjusts for different screen sizes, showing the filter section under the calendar on mobile devices.
 
