@@ -1,131 +1,70 @@
+# Getting Started with Create React App
 
-# Event Calendar Application
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Visit the website - [click here](https://calendar-shyamsundar-10.netlify.app/)
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-This project is a Dynamic Event Calendar Application built with React.js. It allows users to view, add, and delete events on a calendar. The application also supports filtering events by keyword and persists event data using `localStorage`.
+### `npm start`
 
-## Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Calendar View**: Displays a monthly calendar grid with days aligned properly. Users can navigate between months and years.
-  
-  ![calendar](https://github.com/user-attachments/assets/679c76c2-5bf2-43e9-8af4-3be2f59bfd57)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Event Management**: Users can add, edit, and delete events on specific days.
-  
-  ![addevent](https://github.com/user-attachments/assets/c9dce0ed-f4a6-40db-9e12-20a9fe496695)
+### `npm test`
 
-- **Event Filtering**: Users can filter events by keyword.
-  
-  ![search](https://github.com/user-attachments/assets/2365a2da-bc4a-4635-9341-58271629f15a)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **Data Persistence**: Events are stored in `localStorage` to persist data between page refreshes.
-  
-- ![eventlist](https://github.com/user-attachments/assets/8231a7d5-5d31-4565-9d4e-354655037808)
+### `npm run build`
 
-- **Responsive Design**: The layout adjusts for different screen sizes, showing the filter section under the calendar on mobile devices.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Project Structure
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-The project is structured as follows:
-```
-my-calendar-app/ 
-├── public/ 
-│ ├── index.html
-├── src/
-│ ├── components/ 
-│ │ ├── Calendar.js
-│ │ ├── EventModal.js
-│ │ ├── EventList.js
-│ ├── styles/ 
-│ │ ├── styles.css
-│ │ ├── Calendar.css
-│ │ ├── EventModal.css
-│ │ ├── EventList.css
-│ ├── App.js
-│ ├── index.js
-├── package.json
-├── README.md
-```
-### Components
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. **Calendar.js**
+### `npm run eject`
 
-   This component renders the calendar view. It includes:
-   - Logic to display days of the current month.
-   - Navigation between months and years.
-   - Handling click events to open a modal for adding/editing events.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. **EventModal.js**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   This component renders a modal for adding or editing events. It includes:
-   - Input fields for event name, start time, end time, and description.
-   - Buttons to save the event or cancel the action.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-3. **EventList.js**
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   This component displays a list of events. It includes:
-   - Logic to filter events based on the search keyword.
-   - Handling delete actions for events.
+## Learn More
 
-### Logic Explanation
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. **Calendar Logic**:
-   - The calendar is displayed using a grid layout. The days are dynamically generated based on the current month and year.
-   - Navigation between months and years is handled by updating the state variables (`currentMonth` and `currentYear`).
-   - The days of the week (Sunday to Saturday) are displayed at the top, and the days of the month are displayed in the grid.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-2. **Event Management**:
-   - Events are managed using the `useState` hook. Events are stored in an array, and each event has properties like `id`, `date`, `name`, `startTime`, `endTime`, and `description`.
-   - Adding or editing an event opens a modal with input fields. The event data is saved in the state array and persisted in `localStorage`.
+### Code Splitting
 
-3. **Filtering Events**:
-   - Events can be filtered using a search keyword. The `filteredEvents` array is generated by filtering the `events` array based on the keyword.
-   - The filtered events are displayed in the `EventList` component.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-4. **Data Persistence**:
-   - Events are stored in `localStorage` to persist data between page refreshes. The `useEffect` hook is used to update `localStorage` whenever the `events` state changes.
+### Analyzing the Bundle Size
 
-5. **Responsive Design**:
-   - The layout adjusts for different screen sizes using CSS media queries. On desktop, the filter section and calendar are displayed side by side. On mobile devices, the filter section is displayed under the calendar.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Installation
+### Making a Progressive Web App
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shyamsundar-10/event-calendar.git
-   cd dynamic-event-calendar
-2. Install dependencies:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-   ```bash
-   npm install
+### Advanced Configuration
 
-3. Start the development server:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-   ```bash
-   npm start
+### Deployment
 
-## Usage
-**Viewing Events:**
-Click on any day in the calendar to view, add, or edit events.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-**Switching Months and Years:**
-Use the "Previous" and "Next" buttons or the dropdowns to navigate between months and years.
+### `npm run build` fails to minify
 
-**Filtering Events:**
-Use the filter input field to search for events by name.
-
-## Technologies Used
-
-   - React.js: For building the user interface.
-
-   - shadcn: For UI components.
-
-   - localStorage: For data persistence.
-
-   - CSS: For styling the application.
-
-### License
-This project is licensed under the MIT License.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
