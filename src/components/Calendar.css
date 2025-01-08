@@ -1,6 +1,7 @@
 .calendar {
   max-width: 800px;
   margin: auto;
+  margin-bottom: 20px;
   text-align: center;
   background: #fff;
   border-radius: 8px;

@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
   }
   
   .App {
@@ -27,11 +28,5 @@ body {
   
   .main-content {
     flex: 2;
-  }
-  
-  @media (min-width: 768px) {
-    .sidebar {
-      margin-right: 20px;
-    }
   }
   

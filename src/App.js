@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Calendar from "./components/Calendar";
 import EventModal from "./components/EventModal";
 import EventList from "./components/EventList";
+import NavBar from "./components/NavBar";
 import "./styles/styles.css";
 import "./components/EventList.css";
 
@@ -45,6 +46,18 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar/>
+      <div className="main-content">
+        <Calendar events={events} openModal={openModal} />
+        {isModalOpen && (
+          <EventModal
+            date={selectedDate}
+            addEvent={addEvent}
+            editEvent={editEvent}
+            closeModal={() => setIsModalOpen(false)}
+          />
+        )}
+      </div>
       <div className="sidebar">
         <div className="filter-card">
           <input
@@ -56,17 +69,6 @@ function App() {
           />
           <EventList events={filteredEvents} deleteEvent={deleteEvent} />
         </div>
-      </div>
-      <div className="main-content">
-        <Calendar events={events} openModal={openModal} />
-        {isModalOpen && (
-          <EventModal
-            date={selectedDate}
-            addEvent={addEvent}
-            editEvent={editEvent}
-            closeModal={() => setIsModalOpen(false)}
-          />
-        )}
       </div>
     </div>
   );

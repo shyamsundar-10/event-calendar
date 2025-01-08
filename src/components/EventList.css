@@ -2,13 +2,14 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 20px;
   text-align: left;
 }
 
 .filter-input {
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   margin: 10px 10px 0 10px;
   padding: 10px;
   font-size: 1rem;
